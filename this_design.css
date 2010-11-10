@@ -706,7 +706,8 @@ div.dokuwiki div.toolbox_sidebar a.revert {
 }
 
 #menubar {
-	overflow: hidden;
+	overflow: visible;
+	height: 100px;
 }
 
 div.dokuwiki .right-side {

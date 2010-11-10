@@ -45,10 +45,46 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
       <div class="search-form">
         <?php tpl_searchform() ?>
       </div>
-    <?php if(!tpl_getConf('hideactions') || tpl_getConf('hideactions') && isset($_SERVER['REMOTE_USER'])) { ?>
+      <?php if(!tpl_getConf('hideactions') || tpl_getConf('hideactions') && isset($_SERVER['REMOTE_USER'])) { ?>
       <div class="action-menus">
-   </div>
+        <div class="action-menu">
+			<div class="action-menu-title">
+				⚙
+			</div>
+			<div class="action-menu-content">
+          <?php 
+            if(!tpl_getConf('closedwiki') || (tpl_getConf('closedwiki') && isset($_SERVER['REMOTE_USER']))) {
+                    if(!plugin_isdisabled('npd') && ($npd =& plugin_load('helper', 'npd'))) {
+                      $npd->html_new_page_button();
+                    }
+                    tpl_actionlink('edit');
+                    tpl_actionlink('history');
+                    tpl_actionlink('backlink');
+            }
+          ?>
+			</div>
+        </div>
+        <div class="action-menu">
+        <div class="action-menu-title">
+			⚒
+		</div>
+		<div class="action-menu-content"><?php
+                if(!tpl_getConf('closedwiki') || (tpl_getConf('closedwiki') && isset($_SERVER['REMOTE_USER']))) {
+                  tpl_actionlink('admin');
+                  tpl_actionlink('revert');
+                  tpl_actionlink('profile');
+                  tpl_actionlink('recent');
+                  tpl_actionlink('index');
+                  tpl_actionlink('login');
+
+                } else {
+                  tpl_actionlink('login');
+                }
+          ?></div>
+        </div>
+    </div>
     <?php } ?>
+
   <div class="top-menu">
     <ul>
       <li><a href="/">Home</a></li>
