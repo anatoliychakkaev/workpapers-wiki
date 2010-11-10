@@ -144,9 +144,11 @@ text-shadow: rgba(255, 255, 255, 0.898438) 0px 1px 1px;
     line-height:30px;
     width:100%;
     overflow:hidden;
-    margin:0px;
+    margin:0 0 10px;
     padding:0px;
     border-bottom: 1px solid #EEEEEE;
+    float: left;
+    clear: both;
 }
 #trail a {
     padding-right: 5px !important;
@@ -403,9 +405,12 @@ p {
 }
 
 .right-page {
-	margin-left: 245px;
-	overflow: hidden;
+	float: left;
 	width: 735px;
+}
+
+.right-page.start-page {
+	width: 980px;
 }
 
 .left-sidebar {
@@ -700,10 +705,23 @@ div.dokuwiki div.toolbox_sidebar a.revert {
   background: transparent url(images/tool-revert.png) 12px center no-repeat;
 }
 
+#menubar {
+	overflow: hidden;
+}
+
+div.dokuwiki .right-side {
+	float: right;
+}
+
+div.dokuwiki .right-side .search-form {
+	float: right;
+}
+
 div.dokuwiki .top-menu {
 	float: right;
 	font-size: 1em;
-	margin: 54px 0 0;
+	margin: 10px 0 0;
+	clear: both;
 }
 
 div.dokuwiki .top-menu li {
@@ -746,6 +764,12 @@ div.dokuwiki .footer ul {
 	line-height: 1.6em;
 }
 
+div.dokuwiki .action-buttons {
+	width: 100%;
+	clear: both;
+	overflow: hidden;
+}
+
 div.dokuwiki .action-buttons ul {
 	margin: 20px 0 0;
 }
@@ -764,4 +788,24 @@ div.dokuwiki .action-buttons ul {
 div.dokuwiki .action-buttons a, div.dokuwiki .action-buttons a:hover, div.dokuwiki .action-buttons a:focus {
 	color: #333333;
 	text-decoration: none;
+}
+
+.menu #wiki_navigate {
+	font-size: 1.2em;
+}
+
+.menu #wiki_navigate ul ul {
+	background: none;
+	margin: 10px 0 0;
+}
+
+.menu #wiki_navigate a {
+	display: inline;
+	padding: 0;
+	color: #0088CC;
+	text-decoration: none;
+}
+
+.menu #wiki_navigate a:hover, .menu #wiki_navigate a:focus {
+	text-decoration: underline !important;
 }

@@ -36,16 +36,29 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
 
 </head>
 <body class="dw-<?php print tpl_getConf('sidebar'); ?>">
+<a name="top"></a>
 <?php /*old includehook*/ @include(dirname(__FILE__).'/topheader.html')?>
 
 <div id="menubar" class="dokuwiki">
-
   <?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" accesskey="h" title="[ALT+H]" id="wikititle"')?>
-    <?php tpl_searchform() ?>
+    <div class="right-side">
+      <div class="search-form">
+        <?php tpl_searchform() ?>
+      </div>
     <?php if(!tpl_getConf('hideactions') || tpl_getConf('hideactions') && isset($_SERVER['REMOTE_USER'])) { ?>
       <div class="action-menus">
-z    </div>
+   </div>
     <?php } ?>
+  <div class="top-menu">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/doku.php?id=performauditprocedures:home">Perform Audit Procedures</a></li>
+      <li><a href="/doku.php?id=audittemplates:home">Audit Tempates</a></li>
+      <li><a href="/doku.php?id=projectmanagement:home">Project Management</a></li>
+      <li><a href="/doku.php?id=firm-departmentmanagement:home">Firm/Department Mangement</a></li>
+    </ul>
+  </div>
+   </div>
 
 </div>
 
@@ -67,8 +80,7 @@ z    </div>
       </div>
           <?php //tpl_sidebar('left') ?>
     </div>
-    <div class="right-page">
-
+    <div class="right-page<?php echo $ID == 'start' ? ' start-page' : '' ?>">
       <?php if(tpl_getConf('trace')) {?> 
         <div id="trail">
           <?php ($conf['youarehere'] != 1) ? tpl_breadcrumbs('') : tpl_youarehere('»');?>
@@ -87,7 +99,15 @@ z    </div>
 			  <?php tpl_pageinfo()?>
 			  </div>
 			</div>
-	
+	               
+	               <div class="action-buttons">  
+	               <ul>
+	                 <?php if(!plugin_isdisabled('npd') && ($npd =& plugin_load('helper', 'npd'))) { ?><li><?php $npd->html_new_page_button(); ?></li><?php } ?>
+                        <li><?php tpl_actionlink('edit'); ?></li>
+                        <li><?php tpl_actionlink('history'); ?></li>
+                        <li class="to-top"><a href="#top">Back to top</a></li>
+                      </ul>
+                    </div>
 	</div>
         </div>
       <?php } else { ?>
@@ -120,6 +140,7 @@ z    </div>
 		  <?php tpl_pageinfo()?>
 		  </div>
 		</div>
+
         </div> 
       <?php }?>
 
@@ -135,6 +156,7 @@ z    </div>
 		  <?php tpl_pageinfo()?>
 		  </div>
 		</div>
+
       </div>
     <?php } ?>
 
@@ -143,7 +165,6 @@ z    </div>
    <?php flush()?>
 
     <?php /*old includehook*/ @include(dirname(__FILE__).'/footer.html')?>
-
 
 <div class="no"><?php /* provide DokuWiki housekeeping, required in all templates */ tpl_indexerWebBug()?></div>
 </body>
