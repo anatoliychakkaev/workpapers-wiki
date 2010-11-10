@@ -1,0 +1,154 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+CONF	Makefile	/^CONF=$(DIST_DIR)\/conf\/default.php \\$/;"	m
+CSS	Makefile	/^CSS=$(DIST_DIR)\/arctic_design.css \\$/;"	m
+DIST_DIR	Makefile	/^DIST_DIR=..\/arctic$/;"	m
+DIST_FILES	Makefile	/^DIST_FILES= $(DOCS) $(CSS) $(HTML) $(SCRIPT) $(PHP) $(STYLE_INI) $(IMAGES) $(LANG) $(CONF)$/;"	m
+DIST_NAME	Makefile	/^DIST_NAME=template-arctic-$(DIST_VERSION)$/;"	m
+DIST_VERSION	Makefile	/^DIST_VERSION=`cat VERSION`$/;"	m
+DOCS	Makefile	/^DOCS=$(DIST_DIR)\/README \\$/;"	m
+HTML	Makefile	/^HTML=$(DIST_DIR)\/footer.html \\$/;"	m
+ID	conf/local.php	/^		$ID = $fileNavigate;$/;"	v
+ID	conf/local.php	/^	$ID = $saveID;$/;"	v
+ID	tpl_functions.php	/^        $ID = $INFO['id'];$/;"	v
+ID	tpl_functions.php	/^        $ID = $oldid;$/;"	v
+ID	tpl_functions.php	/^    $ID  = $svID;$/;"	v
+IMAGES	Makefile	/^IMAGES=$(DIST_DIR)\/images\/bullet.gif \\$/;"	m
+LANG	Makefile	/^LANG=$(DIST_DIR)\/lang\/de\/settings.php \\$/;"	m
+PHP	Makefile	/^PHP=$(DIST_DIR)\/detail.php \\$/;"	m
+R	tpl_functions.php	/^	    $R =& p_get_renderer('xhtml');$/;"	v
+REV	conf/local.php	/^		$REV = '';$/;"	v
+REV	conf/local.php	/^	$REV = $saveREV;$/;"	v
+REV	tpl_functions.php	/^    $REV = $svREV;$/;"	v
+SCRIPT	Makefile	/^SCRIPT=$(DIST_DIR)\/script.js$/;"	m
+STYLE_INI	Makefile	/^STYLE_INI=$(DIST_DIR)\/style.ini \\$/;"	m
+TOC	tpl_functions.php	/^    $TOC = $svTOC;$/;"	v
+_getNsSb	tpl_functions.php	/^function _getNsSb($id) {$/;"	f
+act_hide	tpl_functions.php	/^    $act_hide = array( 'edit', 'preview', 'admin', 'conflict', 'draft', 'recover');$/;"	v
+actions	tpl_functions.php	/^                $actions = array('admin', $/;"	v
+addSbLeftTocToggle	script.js	/^function addSbLeftTocToggle() {$/;"	f
+addSbRightTocToggle	script.js	/^function addSbRightTocToggle() {$/;"	f
+always	tpl_functions.php	/^                $always = tpl_getConf('main_sidebar_always');$/;"	v
+cnt	tpl_functions.php	/^        $cnt  = 0;$/;"	v
+cnt	tpl_functions.php	/^    $cnt  = 0;$/;"	v
+current	tpl_functions.php	/^                            $current = $key;$/;"	v
+current	tpl_functions.php	/^                    $current = $try;$/;"	v
+current	tpl_functions.php	/^            $current = $INFO['id'];$/;"	v
+data	tpl_functions.php	/^	$data = $list;$/;"	v
+data	tpl_functions.php	/^        $data = $data[1];$/;"	v
+data	tpl_functions.php	/^        $data = array(wikiFN($id),$list,$opt);$/;"	v
+data	tpl_functions.php	/^        $data = preg_replace($subst['pattern'], $subst['replace'], $data);$/;"	v
+data	tpl_functions.php	/^    $data = p_wiki_xhtml($sb,'',false);$/;"	v
+data	tpl_functions.php	/^    $data = preg_replace('\/(<h.*?><a.*?name=")(.*?)(".*?id=")(.*?)(">.*?<\\\/a><\\\/h.*?>)\/','\\1sb_'.$pos.'_\\2\\3sb_'.$pos.'_\\4\\5', $data);$/;"	v
+data	tpl_functions.php	/^    $data = preg_replace('\/<div class="toc">.*?(<\\\/div>\\n<\\\/div>)\/s', '', $data);$/;"	v
+data	tpl_functions.php	/^  $data = array();$/;"	v
+dir	tpl_functions.php	/^  $dir = $conf['datadir'];$/;"	v
+fileNavigate	conf/local.php	/^		$fileNavigate = getNavigateFN(getNS($ID), $conf['navigate']);$/;"	v
+fileNavigate	conf/local.php	/^	$fileNavigate = '';$/;"	v
+fn	tpl_functions.php	/^        $fn   = $data[0];$/;"	v
+format	tpl_functions.php	/^			$format = 'xhtml';$/;"	v
+found	tpl_functions.php	/^    $found = false;$/;"	v
+generateLinks	tpl_functions.php	/^function generateLinks($naviID) {$/;"	f
+getNavigateFN	conf/local.php	/^function getNavigateFN($ns, $file) {$/;"	f
+group_ns	tpl_functions.php	/^            $group_ns = tpl_getConf('group_sidebar_namespace');$/;"	v
+group_sb	tpl_functions.php	/^                    $group_sb = $group_ns.':'.$grp.':'.$pname;$/;"	v
+html_navigate	conf/local.php	/^function html_navigate() {$/;"	f
+i	conf/local.php	/^	$i = strrpos($ns, ":");$/;"	v
+id	tpl_functions.php	/^ 	$id = $naviID;$/;"	v
+id	tpl_functions.php	/^        $id = cleanID($menuid);$/;"	v
+instructions	tpl_functions.php	/^        $instructions = p_cached_instructions(wikiFN($id),false,$id);$/;"	v
+instructions	tpl_functions.php	/^    $instructions = p_cached_instructions(wikiFN($id),false,$id);$/;"	v
+key	tpl_functions.php	/^            $key = array_search($sb,$sb_content);$/;"	v
+link	tpl_functions.php	/^                $link = '<a href="' . wl($pname) . '" class="wikilink2">' . $pname . '<\/a>' . DOKU_LF;$/;"	v
+lvl	tpl_functions.php	/^        $lvl  = 1;$/;"	v
+lvl	tpl_functions.php	/^        $lvl = 0;$/;"	v
+lvl	tpl_functions.php	/^    $lvl = 0;$/;"	v
+main_sb	tpl_functions.php	/^            $main_sb = $pname;$/;"	v
+max	tpl_functions.php	/^        $max = count($instructions);$/;"	v
+max	tpl_functions.php	/^    $max = count($instructions);$/;"	v
+mylink	tpl_functions.php	/^			$mylink = '<span class="in-path">' . $mylink .'<\/span>';$/;"	v
+mylink	tpl_functions.php	/^		$mylink = html_wikilink($info['page'],$info['title']);$/;"	v
+navigation	tpl_functions.php	/^	$navigation = array( 1 => array(), 2 => array() );$/;"	v
+notoc	tpl_functions.php	/^    $notoc = (in_array('toc',$sbl) || in_array('toc',$sbr)) ? true : false;$/;"	v
+notoc	tpl_functions.php	/^    $notoc = (in_array('toc',$sbl)) ? true : false;$/;"	v
+notoc	tpl_functions.php	/^    $notoc = (in_array('toc',$sbr)) ? true : false;$/;"	v
+notoc	tpl_functions.php	/^    $notoc = false;$/;"	v
+npb	tpl_functions.php	/^                            $npb = $npd->html_new_page_button(true);$/;"	v
+ns	conf/local.php	/^	$ns = ($i) ? substr($ns, 0, $i) : false;	$/;"	v
+ns	tpl_functions.php	/^                $ns = getNS($ns);$/;"	v
+ns	tpl_functions.php	/^            $ns   = $INFO['id'];$/;"	v
+ns	tpl_functions.php	/^    $ns = dirname(str_replace(':','\/',$ID));$/;"	v
+ns	tpl_functions.php	/^  $ns  = cleanID($ns);$/;"	v
+ns	tpl_functions.php	/^  $ns  = utf8_encodeFN(str_replace(':','\/',$ns));$/;"	v
+nsFile	conf/local.php	/^	$nsFile = ($ns) ? "$ns:$file" : $file;$/;"	v
+ns_sb	tpl_functions.php	/^                    $ns_sb = _getNsSb($svID); $/;"	v
+ns_sb	tpl_functions.php	/^                $ns_sb = _getNsSb($svID);$/;"	v
+ns_sb	tpl_functions.php	/^        $ns_sb = implode(':', $path).':'.$pname;$/;"	v
+ns_sb	tpl_functions.php	/^    $ns_sb = '';$/;"	v
+oldid	tpl_functions.php	/^        $oldid = $ID;$/;"	v
+open	tpl_functions.php	/^                    $open = true;$/;"	v
+open	tpl_functions.php	/^                $open = true;$/;"	v
+open	tpl_functions.php	/^        $open = false;$/;"	v
+opt	tpl_functions.php	/^        $opt  = $data[2];$/;"	v
+out	tpl_functions.php	/^                    $out = p_render('xhtml', p_get_instructions(io_readFile(DOKU_TPLINC.'lang\/'.$conf['lang'].'\/nosidebar.txt')), $info);$/;"	v
+out	tpl_functions.php	/^                    $out = p_render('xhtml', p_get_instructions(io_readFile(DOKU_TPLINC.'lang\/en\/nosidebar.txt')), $info);$/;"	v
+p_index_xhtml	tpl_functions.php	/^function p_index_xhtml($ns,$pos) {$/;"	f
+p_sidebar_xhtml	tpl_functions.php	/^function p_sidebar_xhtml($sb,$pos,$subst=array()) {$/;"	f
+page	tpl_functions.php	/^                $page = cleanID($instructions[$i][1][0]);$/;"	v
+page	tpl_functions.php	/^            $page = cleanID($instructions[$i][1][0]);$/;"	v
+page	tpl_functions.php	/^        $page = '';$/;"	v
+page	tpl_functions.php	/^    $page = '';$/;"	v
+parent	tpl_functions.php	/^                            $parent = (array) $data[$key]['parents'];$/;"	v
+parent	tpl_functions.php	/^                    $parent = (array) $data[$try]['parents'];$/;"	v
+parent	tpl_functions.php	/^            $parent = (array) $data[$INFO['id']]['parents']; \/\/ get the "path" of the page we're on currently$/;"	v
+parent	tpl_functions.php	/^        $parent = array();$/;"	v
+parent	tpl_functions.php	/^    $parent = (array) $data[$INFO['id']]['parents']; \/\/ get the "path" of the page we're on currently$/;"	v
+parents	tpl_functions.php	/^        $parents = array();$/;"	v
+parents	tpl_functions.php	/^    $parents = array();$/;"	v
+path	tpl_functions.php	/^    $path  = explode(':', $id);$/;"	v
+pname	tpl_functions.php	/^    $pname = tpl_getConf('pagename');$/;"	v
+pre	tpl_functions.php	/^                $pre = false;$/;"	v
+pre	tpl_functions.php	/^            $pre = false;$/;"	v
+pre	tpl_functions.php	/^        $pre = true;$/;"	v
+pre	tpl_functions.php	/^    $pre = true;$/;"	v
+render_navigation	tpl_functions.php	/^ function render_navigation($menuid){$/;"	f
+saveID	conf/local.php	/^	$saveID = $ID;$/;"	v
+saveREV	conf/local.php	/^	$saveREV = $REV;$/;"	v
+sb_content	tpl_functions.php	/^    $sb_content = ($pos == 'left') ? explode(',', tpl_getConf('left_sidebar_content')) : explode(',', tpl_getConf('right_sidebar_content'));$/;"	v
+sb_order	tpl_functions.php	/^    $sb_order   = ($pos == 'left') ? explode(',', tpl_getConf('left_sidebar_order'))   : explode(',', tpl_getConf('right_sidebar_order'));$/;"	v
+sbl	tpl_functions.php	/^$sbl   = explode(',',tpl_getConf('left_sidebar_content'));$/;"	v
+sbpos	tpl_functions.php	/^$sbpos = tpl_getConf('sidebar');$/;"	v
+sbr	tpl_functions.php	/^$sbr   = explode(',',tpl_getConf('right_sidebar_content'));$/;"	v
+subst	tpl_functions.php	/^                        $subst = array('pattern' => array('\/@GROUP@\/'), 'replace' => array($grp));$/;"	v
+subst	tpl_functions.php	/^                    $subst = array('pattern' => array('\/@USER@\/'), 'replace' => array($user));$/;"	v
+svID	tpl_functions.php	/^    $svID  = $ID;   \/\/ save current ID$/;"	v
+svREV	tpl_functions.php	/^    $svREV = $REV;  \/\/ save current REV $/;"	v
+svTOC	tpl_functions.php	/^    $svTOC = $TOC;  \/\/ save current TOC$/;"	v
+t	detail.php	/^          $t = tpl_img_getTag('Date.EarliestTime');$/;"	v
+t	detail.php	/^          $t = tpl_img_getTag('File.Format');$/;"	v
+t	detail.php	/^          $t = tpl_img_getTag('File.Name');$/;"	v
+t	detail.php	/^          $t = tpl_img_getTag('File.NiceSize');$/;"	v
+t	detail.php	/^          $t = tpl_img_getTag('Simple.Camera');$/;"	v
+t	detail.php	/^          $t = tpl_img_getTag(array('IPTC.Keywords','IPTC.Category','xmp.dc:subject'));$/;"	v
+t	detail.php	/^          $t = tpl_img_getTag(array('Iptc.Byline','Exif.TIFFArtist','Exif.Artist','Iptc.Credit'));$/;"	v
+t	detail.php	/^          $t = tpl_img_getTag(array('Iptc.CopyrightNotice','Exif.TIFFCopyright','Exif.Copyright'));$/;"	v
+toc	tpl_functions.php	/^                    $toc = preg_replace('\/id="(.*?)"\/', 'id="sb__' . $pos . '__\\1"', $toc);$/;"	v
+toc	tpl_functions.php	/^                $toc = tpl_toc(true);$/;"	v
+toggleSbLeftToc	script.js	/^function toggleSbLeftToc() {$/;"	f
+toggleSbRightToc	script.js	/^function toggleSbRightToc() {$/;"	f
+toolb	tpl_functions.php	/^    $toolb = (in_array('toolbox',$sbl) || in_array('toolbox',$sbr)) ? true : false;$/;"	v
+toolb	tpl_functions.php	/^    $toolb = (in_array('toolbox',$sbl)) ? true : false;$/;"	v
+toolb	tpl_functions.php	/^    $toolb = (in_array('toolbox',$sbr)) ? true : false;$/;"	v
+toolb	tpl_functions.php	/^    $toolb = false;$/;"	v
+tpl_sidebar	tpl_functions.php	/^function tpl_sidebar($pos) {$/;"	f
+tpl_sidebar_dispatch	tpl_functions.php	/^function tpl_sidebar_dispatch($sb,$pos) {$/;"	f
+tpl_sidebar_hide	tpl_functions.php	/^function tpl_sidebar_hide() {$/;"	f
+try	tpl_functions.php	/^                $try = "$ns:";$/;"	v
+user	tpl_functions.php	/^                $user = $_SERVER['REMOTE_USER'];$/;"	v
+user_ns	tpl_functions.php	/^            $user_ns  = tpl_getConf('user_sidebar_namespace');$/;"	v
+user_ns	tpl_functions.php	/^            $user_ns = tpl_getConf('user_sidebar_namespace');$/;"	v
+user_sb	tpl_functions.php	/^                $user_sb = $user_ns . ':' . $user . ':' . $pname;$/;"	v

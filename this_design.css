@@ -1,0 +1,767 @@
+.headerinc {
+	opacity: 0.3;
+	font-size: 10px;
+	text-align: right;
+	z-index: -9991;
+	position: absolute;
+	bottom: 0;
+	left:0 ;
+	right: 0;
+	background-color: rgba(255,255,255,0.3);
+}
+
+.action-menus {
+  position: relative;
+	float: right;
+	height: 72px;
+
+	z-index: 10000;
+}
+.action-menu {
+	position: relative;
+	float: right;
+}
+.action-menu-title {
+	display: block;
+	font-size: 1.6364em; /* 36px */
+	text-align: center;
+	line-height: 1.6364em; /* 36px */
+	width: 1.6364em; /* 36px */
+	height: 1.6364em; /* 36px */
+
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	text-shadow: rgba(255, 255, 255, 0.898438) 0px 1px 1px;
+  -webkit-border-radius-top: 5px;
+}
+.action-menu:hover .action-menu-title {
+	color: white;
+	background: gainsboro -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F3F3F3), to(gainsboro));
+  border: 1px solid #cbcbcb;
+  text-shadow: rgba(0, 0, 0, 0.898438) 0px 1px 1px;
+}
+.action-menu-content {
+	display: none;
+  overflow: hidden;
+
+  margin-bottom: 10px;
+	line-height: 18px;
+	min-width: 200px;
+	left: 0px;
+	
+	background: #f7f7f7 ;
+  border: 1px solid #cbcbcb;
+	-webkit-box-shadow: 0px 6px 12px rgba(0,0,0, .5);
+  -webkit-border-radius-bottom: 5px;
+	
+}
+.action-menu:hover .action-menu-content {
+	position: absolute;
+	display: block;
+}
+.action-menu-content a {
+	display: block;
+	color: rgba(0, 0, 0, 0.648438) !important;
+	padding: 4px 20px;
+text-shadow: rgba(255, 255, 255, 0.898438) 0px 1px 1px;
+}
+.action-menu-content a:hover {
+	text-shadow: none;
+	background-color: __existing__!important;
+	color: white!important;
+	text-decoration: none!important;
+}
+
+
+
+
+/**
+ * Design Elements - additional  CSS for the Arctic template
+ *
+ * @author Michael Klier <chi@chimeric.de>
+ */
+#menubar {
+	display: block;
+	clear: both;
+	width: 980px;
+	overflow: hidden;
+	margin: 1em auto;
+	padding: 0 0 10px;
+	border-bottom: 1px solid #eee;
+
+}
+
+#menubar #qsearch__in {
+	margin-left: 10px;
+	width: 210px;
+  line-height: 1.6364em; /* 36px */
+  height: 1.6364em; /* 36px */
+  background: none;
+}
+
+#menubar .search .button {
+	height: 27px;
+}
+
+#menubar .search {
+	display: block;
+	float: right;
+}
+
+
+#wikititle {
+	display: block;
+	color: #1F1f1F;
+	text-decoration: none;
+	float: left;
+	font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+	color: #000;
+	
+	font-size: 1.8333em; /* 22px */
+  line-height: 1.6364em; /* 36px */
+  margin-bottom: 0em;
+	margin-left: 12px;
+			text-shadow: white 1px 1px;
+	background: url(images/logo.png) no-repeat;
+	width:283px;
+	height: 100px;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+
+.dw-right #wikititle {
+	margin-left: 40px;	
+}
+
+.dw-right .search {
+	margin-left: 40px;
+	margin-right: 12px;
+}
+
+#trail {
+    font-size: 0.9em;
+    height:30px;
+    line-height:30px;
+    width:100%;
+    overflow:hidden;
+    margin:0px;
+    padding:0px;
+    border-bottom: 1px solid #EEEEEE;
+}
+#trail a {
+    padding-right: 5px !important;
+    padding-left: 5px;
+    text-decoration: none;
+    color:#336699;
+    border: 0;
+}
+
+
+#trail a:hover {
+    text-decoration: underline;
+}
+
+
+#trail a.wikilink2:hover
+{
+	color:__missing__;
+}
+
+
+
+
+
+
+
+.page {
+	background-color: white;
+}
+
+
+
+.sidebar-box {
+	width: 90%;
+	margin: 0;
+	padding: 0.2em 0;
+	overflow: hidden;
+}
+
+
+.dokuwiki .menu li, .dokuwiki  .menu ul {
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+
+
+.menu a.wikilink1:link, .menu a.wikilink1:visited  {
+	display: block;
+	color: #787C80;
+	color: rgba(0,0,0,0.65);
+	padding: 9px 0px 9px 13px;
+	text-shadow: white 1px 1px;
+	text-decoration: none!important;
+
+}
+
+
+.menu ul ul {
+	background-color: rgba(0,0,0, 0.05);
+}
+
+
+
+.menu ul ul ul {
+	background-color: transparent;
+}
+
+.menu ul ul ul a {
+}
+
+.menu ul ul ul {
+	padding-left: 0.75em !important;
+}
+.menu ul ul a.wikilink1:link {
+
+}
+
+/* Alle aktiven Links */
+.menu .curid a.wikilink1:link,.menu .curid a.wikilink1:visited {
+	color: black;
+}
+
+
+/* Erste Ebene, alle Links */
+.menu > ul > li > div > a {
+	border-bottom: 1px solid #e5e5e5;
+/*	border-bottom: 1px solid rgba(0,0,0, 0.05);*/
+
+}
+/* Erste Ebene, aktiver Hintergrund */
+.menu > ul > li > div > .current {
+	display: block;
+	background: #dcdcdc -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f3f3f3), to(#DCDCDC));
+}
+/* Erste Ebene, aktiver Link */
+.menu > ul > li > div > .current a.wikilink1 {
+
+}
+
+/* Zweite Ebene, alle Links */
+.menu > ul > li > ul > li > div > a {
+
+}
+/* Zweite Ebene, aktiver Link */
+.menu > ul > li > ul > li > div > .current a.wikilink1 {
+
+}
+
+
+div.dokuwiki #page > h1:first-child {
+	font-size: 3em;
+	line-height: 1em;
+	margin-bottom: 0.75em;
+	margin-top: 0.5em;
+}
+
+
+div.dokuwiki #page h1 { 
+	font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+	font-weight: bold; 
+	color: rgba(0,0,0, .95);
+	
+	font-size: 2em; /* 24px */
+  line-height: 1.5em; /* 36px */
+  margin-top: 0.75em;
+  margin-bottom: 0em;
+}
+
+div.dokuwiki #page h2 {
+	font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+	font-weight: bold; 
+
+	color: rgba(0,0,0, .75);
+	
+	font-size: 1.8333em; /* 22px */
+  line-height: 1.6364em; /* 36px */
+  margin-top: 0.8182em;
+  margin-bottom: 0em;
+}
+div.dokuwiki #page h3 { 
+	font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+	font-weight: bold; 
+
+	color: rgba(0,0,0, .65);
+	
+
+	font-size: 1.6667em; /* 20px */
+  line-height: 1.8em; /* 36px */
+  margin-top: 0.9em;
+  margin-bottom: 0em;
+}
+div.dokuwiki #page h4 { 
+  font-size: 1.5em; /* 18px */
+  line-height: 1em; /* 18px */
+  margin-top: 1em;
+  margin-bottom: 0em;
+	font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+	font-weight: bold; 
+	color: black; 
+	color: rgba(0,0,0, .55);
+	
+
+}
+div.dokuwiki #page h5 { 
+	font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+	font-weight: bold; 
+	color: black; 
+	color: rgba(0,0,0, .45);
+	
+	font-size: 1.3333em; /* 16px */
+  line-height: 1.125em; /* 18px */
+  margin-top: 1.125em;
+  margin-bottom: 0em;
+}
+div.dokuwiki #page h6 { 
+	font-size: 1.1667em; /* 14px */
+	  line-height: 1.2857em; /* 18px */
+	  margin-top: 1.2857em;
+	  margin-bottom: 0em;
+		font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+		font-weight: bold; 
+		color: black; 
+		color: rgba(0,0,0, .4);
+
+
+}
+
+
+.sidebar-box h1, .sidebar-box h2,.sidebar-box h3, .sidebar-box h4,.sidebar-box h5 {
+	margin-bottom: 0.3em;
+	font-size: 1.4em;
+	font-weight: normal;
+}
+
+div.dokuwiki .sidebar-box ul {
+	margin: 0;
+	list-style: none;
+}
+
+div.dokuwiki .sidebar-box ul li {
+	font-size: 1.1em;
+}
+
+.sidebar_box {
+	border-top: 1px solid black;
+}
+
+html { background:#fff; }
+body { font:12px/1.5 "Lucida Grande", Geneva, Arial, Verdana, sans-serif; color:#333; background:transparent; }
+
+/*vertical rhythm */
+h1, h2,h3, h4,h5 {
+  font-family: Helvetica, sans-serif;
+}
+
+p {
+  font-size: 1em; /* 12px */
+  line-height: 1.5em; /* 18px */
+  margin: 0 0 1.5em 0;
+}
+
+
+
+
+
+
+/* end of rhythm */
+
+
+#wrapper {
+	margin: 2em auto;
+	width:980px; 
+	overflow: hidden;
+}
+
+
+.dw-left #wrapper {
+	background: #fff;
+
+}
+.dw-right #wrapper {
+	background: white url(images/main-background.png) repeat-y 735px 0px;
+}
+
+#wrapper {
+	margin-bottom: 4em;
+}
+
+
+#page {
+	padding: 10px 0;
+}
+
+.right-page {
+	margin-left: 245px;
+	overflow: hidden;
+	width: 735px;
+}
+
+.left-sidebar {
+	float: left;
+	width: 240px;
+}
+
+
+
+
+.left-page {
+	float: left;
+	overflow: hidden;
+	width: 735px;
+}
+
+.right-sidebar {
+	margin-left: 735px;
+	width: 245px;
+}
+
+
+
+.breadcrumbs {
+	clear: both;
+}
+/* ----- Sidebar -------------- */
+div.dokuwiki div.left_sidebar div.secedit,
+div.dokuwiki div.right_sidebar div.secedit {
+    text-align: right;
+}
+
+div.dokuwiki div.left_sidebar div.breadcrumbs,
+div.dokuwiki div.right_sidebar div.breadcrumbs {
+    margin-left: 0;
+}
+
+
+div.dokuwiki div.left_sidebar div.secedit input.button,
+div.dokuwiki div.right_sidebar div.secedit input.button {
+    float: none;
+    margin: 0.1em;
+}
+
+
+
+
+
+/* ----- Forms ---------------- */
+div.dokuwiki fieldset {
+  border-color: __form_border__;
+}
+
+div.dokuwiki textarea.edit {
+  border-color: __form_border__;
+}
+
+div.dokuwiki input.edit, div.dokuwiki select.edit {
+  border-color: __form_border__;
+}
+
+div.dokuwiki input.missing {
+  border-color: __form_border__;
+}
+
+div.dokuwiki div.left_sidebar form#dw__search,
+div.dokuwiki div.right_sidebar form#dw__search {
+  margin-bottom: 0.2em;
+  display: block;
+  font-size: 100%;
+}
+
+div.dokuwiki div.left_sidebar form#dw__search input.edit,
+div.dokuwiki div.right_sidebar form#dw__search input.edit {
+  margin-left: 0;
+  font-size: 100%;
+  width: 60%;
+}
+
+/* Buttons */
+div.dokuwiki input.button, div.dokuwiki button.button{
+  border-color: __form_border__;
+  font-size: 100%;
+}
+
+div.dokuwiki div.secedit input.button, .action-buttons a {
+  border-color: __form_border__;
+  font-size: 100%;
+  padding: 4px;
+}
+
+
+
+
+/* ----- AJAX Quicksearch ----- */
+div.dokuwiki div.left_sidebar div.ajax_qsearch,
+div.dokuwiki div.right_sidebar div.ajax_qsearch {
+  position: relative;
+  left: 0;
+  top: 2px;
+  display: none;
+  background: __background_neu__;
+  font-size: 85%;
+  width: 95.5%;
+  margin: 0.2em 0 0.5em 0;
+}
+
+div.dokuwiki div#bar__top div.ajax_qsearch {
+  position: absolute;
+  right: 100px;
+  width: 200px;
+  font-size: 85%;
+  display: none;
+  border: 1px solid __border__;
+  background: __background_neu__;
+  text-align: left;
+  padding: 0.2em;
+  margin-top: 5px;
+  opacity: 0.9;
+}
+
+div.dokuwiki  div.ajax_qsearch strong {
+  font-size: 115%;
+  background: __background_alt__;
+  padding: 0.2em;
+  display: block;
+}
+
+/* ----- Toolbox -------------- */
+div.dokuwiki div.toolbox_sidebar ul {
+  list-style: none;
+  margin: 0;
+  clear: both;
+}
+
+div.dokuwiki div.toolbox_sidebar a.login,
+div.dokuwiki div.toolbox_sidebar a.logout,
+div.dokuwiki div.toolbox_sidebar a.index,
+div.dokuwiki div.toolbox_sidebar a.recent,
+div.dokuwiki div.toolbox_sidebar a.create,
+div.dokuwiki div.toolbox_sidebar a.edit,
+div.dokuwiki div.toolbox_sidebar a.source,
+div.dokuwiki div.toolbox_sidebar a.show,
+div.dokuwiki div.toolbox_sidebar a.admin,
+div.dokuwiki div.toolbox_sidebar a.revisions,
+div.dokuwiki div.toolbox_sidebar a.subscribe,
+div.dokuwiki div.toolbox_sidebar a.subscribens,
+div.dokuwiki div.toolbox_sidebar a.unsubscribe,
+div.dokuwiki div.toolbox_sidebar a.unsubscribens,
+div.dokuwiki div.toolbox_sidebar a.backlink,
+div.dokuwiki div.toolbox_sidebar a.profile,
+div.dokuwiki div.toolbox_sidebar a.revert,
+div.dokuwiki div.toolbox_sidebar a.npd {
+  padding: 1px 0px 1px 18px;
+}
+
+div.dokuwiki div.toolbox_sidebar a.login {
+  background: transparent url(images/tool-login.png) 0px 1px no-repeat;
+}
+
+div.dokuwiki div.toolbox_sidebar a.logout,
+#menubar a.logout {
+  background: transparent url(images/tool-logout.png) 0px 1px no-repeat;
+}
+
+div.dokuwiki div.toolbox_sidebar a.index {
+  background: transparent url(images/tool-index.png) 1px 1px no-repeat;
+}
+
+div.dokuwiki div.toolbox_sidebar a.recent {
+  background: transparent url(images/tool-recent.png) 0px 1px no-repeat;
+}
+
+div.dokuwiki div.toolbox_sidebar a.create,
+div.dokuwiki div.toolbox_sidebar a.edit,
+div.dokuwiki div.toolbox_sidebar a.npd {
+  background: transparent url(images/tool-edit.png) 0px 1px no-repeat;
+}
+
+div.dokuwiki div.toolbox_sidebar a.source,
+div.dokuwiki div.toolbox_sidebar a.show {
+  background: transparent url(images/tool-source.png) 0px 1px no-repeat;
+}
+
+div.dokuwiki div.toolbox_sidebar a.admin {
+  background: transparent url(images/tool-admin.png) 0px 1px no-repeat;
+}
+
+div.dokuwiki div.toolbox_sidebar a.revisions {
+  background: transparent url(images/tool-revisions.png) 0px 1px no-repeat;
+}
+
+div.dokuwiki div.toolbox_sidebar a.subscribe,
+div.dokuwiki div.toolbox_sidebar a.subscribens,
+div.dokuwiki div.toolbox_sidebar a.unsubscribe,
+div.dokuwiki div.toolbox_sidebar a.unsubscribens {
+  background: transparent url(images/tool-subscribe.png) 0px 1px no-repeat;
+}
+
+div.dokuwiki div.toolbox_sidebar a.backlink {
+  background: transparent url(images/tool-backlink.png) 0px 1px no-repeat;
+}
+
+div.dokuwiki div.toolbox_sidebar a.profile {
+  background: transparent url(images/tool-profile.png) 0px 1px no-repeat;
+}
+
+div.dokuwiki div.toolbox_sidebar a.revert {
+  background: transparent url(images/tool-revert.png) 0px 1px no-repeat;
+}
+
+#menubar a.login,
+#menubar a.logout,
+#menubar a.index,
+#menubar a.recent,
+#menubar a.create,
+#menubar a.edit,
+#menubar a.source,
+#menubar a.show,
+#menubar a.admin,
+#menubar a.revisions,
+#menubar a.subscribe,
+#menubar a.subscribens,
+#menubar a.unsubscribe,
+#menubar a.unsubscribens,
+#menubar a.backlink,
+#menubar a.profile,
+#menubar a.top,
+#menubar a.revert,
+#menubar a.npd {
+  padding-left: 30px;
+  height: 22px;
+	line-height: 22px;
+}
+
+#menubar a.login {
+  background: transparent url(images/tool-login.png) 12px 0px no-repeat;
+}
+
+#menubar a.logout,
+#menubar a.logout {
+  background: transparent url(images/tool-logout.png) 12px center no-repeat;
+}
+
+#menubar a.index {
+  background: transparent url(images/tool-index.png) 12px center no-repeat;
+}
+
+#menubar a.recent {
+  background: transparent url(images/tool-recent.png) 12px center no-repeat;
+}
+
+#menubar a.create,
+#menubar a.edit,
+#menubar a.npd {
+  background: transparent url(images/tool-edit.png) 12px center no-repeat;
+}
+
+#menubar a.source,
+#menubar a.show {
+  background: transparent url(images/tool-source.png) 12px center no-repeat;
+}
+
+#menubar a.admin {
+  background: transparent url(images/tool-admin.png) 12px center no-repeat;
+}
+
+#menubar a.revisions {
+  background: transparent url(images/tool-revisions.png) 12px center no-repeat;
+}
+
+#menubar a.subscribe,
+#menubar a.subscribens,
+#menubar a.unsubscribe,
+#menubar a.unsubscribens {
+  background: transparent url(images/tool-subscribe.png) 12px center no-repeat;
+}
+
+#menubar a.backlink {
+  background: transparent url(images/tool-backlink.png) 12px center no-repeat;
+}
+
+#menubar a.profile {
+  background: transparent url(images/tool-profile.png) 12px center no-repeat;
+}
+
+#menubar a.top {
+  background: transparent url(images/tool-top.png) 12px center no-repeat;
+}
+
+#menubar a.revert {
+  background: transparent url(images/tool-revert.png) 12px center no-repeat;
+}
+
+div.dokuwiki .top-menu {
+	float: right;
+	font-size: 1em;
+	margin: 54px 0 0;
+}
+
+div.dokuwiki .top-menu li {
+	float: left;
+	list-style: none;
+	margin: 0 0 0 15px;
+}
+
+div.dokuwiki .footer ul {
+	margin: 0;
+}
+
+.footer {
+	border-top: 1px solid #eee;
+	padding: 10px 0 0;
+}
+
+.footer .info-block {
+	float: left;
+	padding: 0 10px;
+}
+
+.footer .links {
+	float: right;
+}
+
+.footer .links-block {
+	float: left;
+	margin: 0 10px 0 60px;
+}
+
+.footer .links-block h4 {
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0 0 6px;
+}
+
+.footer .links-block ul li {
+	list-style: none;
+	line-height: 1.6em;
+}
+
+div.dokuwiki .action-buttons ul {
+	margin: 20px 0 0;
+}
+
+.action-buttons ul li {
+	list-style: none;
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+.action-buttons ul li.to-top {
+	float: right;
+	margin: 0;
+}
+
+div.dokuwiki .action-buttons a, div.dokuwiki .action-buttons a:hover, div.dokuwiki .action-buttons a:focus {
+	color: #333333;
+	text-decoration: none;
+}
