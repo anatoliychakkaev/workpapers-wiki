@@ -21,6 +21,6 @@ $conf['search']                     = 'left';                       // defines t
 $conf['closedwiki']                 = 0;                            // don't show sidebars for logged out users at all
 $conf['hideactions']                = 0;                            // hide all wiki related actions for non logged in users
 
-include('local.php');
+require_once('local.php');
 //Setup vim: ts=2 sw=2:
 ?>

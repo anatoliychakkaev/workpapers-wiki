@@ -111,10 +111,8 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
   <?php if(!tpl_sidebar_hide()) { ?>
     <div class="left-sidebar">
       <div class="menu">
-        <?php// render_navigation(":menu");?>
         <?php html_navigate(); ?>
       </div>
-          <?php //tpl_sidebar('left') ?>
     </div>
     <div class="right-page<?php echo $ID == 'start' ? ' start-page' : '' ?>">
       <?php if(tpl_getConf('trace')) {?> 
@@ -136,7 +134,7 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
 			  </div>
 			</div>
 	               
-	               <div class="action-buttons">  
+	               <div class="action-buttons">
 	               <ul>
 	                 <?php if(!plugin_isdisabled('npd') && ($npd =& plugin_load('helper', 'npd'))) { ?><li><?php $npd->html_new_page_button(); ?></li><?php } ?>
                         <li><?php tpl_actionlink('edit'); ?></li>
@@ -148,11 +146,12 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
         </div>
       <?php } else { ?>
         <div  id="page" class="page">
-          <?php tpl_content()?> 
+          <?php tpl_content() ?> 
         </div> 
       <?php } ?>
 
     <?php } elseif(tpl_getConf('sidebar') == 'right') { ?>
+
 
       <?php if(!tpl_sidebar_hide()) { ?>
         <div class="left-page">
