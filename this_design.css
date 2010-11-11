@@ -804,6 +804,7 @@ div.dokuwiki .action-buttons a, div.dokuwiki .action-buttons a:hover, div.dokuwi
 	padding: 0;
 	color: #0088CC;
 	text-decoration: none;
+	border: 0;
 }
 
 .menu #wiki_navigate a:hover, .menu #wiki_navigate a:focus {

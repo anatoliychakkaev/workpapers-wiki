@@ -117,7 +117,7 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
     <div class="right-page<?php echo $ID == 'start' ? ' start-page' : '' ?>">
       <?php if(tpl_getConf('trace')) {?> 
         <div id="trail">
-          <?php ($conf['youarehere'] != 1) ? tpl_breadcrumbs('') : tpl_youarehere('»');?>
+          <?php ($conf['youarehere'] != 1) ? tpl_breadcrumbs('»') : tpl_youarehere('»');?>
         </div>
       <?php } ?>
 
