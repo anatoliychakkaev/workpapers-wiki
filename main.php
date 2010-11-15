@@ -36,54 +36,15 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
 
 </head>
 <body class="dw-<?php print tpl_getConf('sidebar'); ?>">
+
 <a name="top"></a>
 <?php /*old includehook*/ @include(dirname(__FILE__).'/topheader.html')?>
 
+<div class="header">
 <div id="menubar" class="dokuwiki">
-  <?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" accesskey="h" title="[ALT+H]" id="wikititle"')?>
-    <div class="right-side">
-      <div class="search-form">
-        <?php tpl_searchform() ?>
-      </div>
-      <?php if(!tpl_getConf('hideactions') || tpl_getConf('hideactions') && isset($_SERVER['REMOTE_USER'])) { ?>
-      <div class="action-menus">
-        <div class="action-menu">
-			<div class="action-menu-title">
-				⚙
-			</div>
-			<div class="action-menu-content">
-          <?php 
-            if(!tpl_getConf('closedwiki') || (tpl_getConf('closedwiki') && isset($_SERVER['REMOTE_USER']))) {
-                    if(!plugin_isdisabled('npd') && ($npd =& plugin_load('helper', 'npd'))) {
-                      $npd->html_new_page_button();
-                    }
-                    tpl_actionlink('edit');
-                    tpl_actionlink('history');
-                    tpl_actionlink('backlink');
-            }
-          ?>
-			</div>
-        </div>
-        <div class="action-menu">
-        <div class="action-menu-title">
-			⚒
-		</div>
-		<div class="action-menu-content"><?php
-                if(!tpl_getConf('closedwiki') || (tpl_getConf('closedwiki') && isset($_SERVER['REMOTE_USER']))) {
-                  tpl_actionlink('admin');
-                  tpl_actionlink('revert');
-                  tpl_actionlink('profile');
-                  tpl_actionlink('recent');
-                  tpl_actionlink('index');
-                  tpl_actionlink('login');
+  <!-- <?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" accesskey="h" title="[ALT+H]" id="wikititle"')?> -->
 
-                } else {
-                  tpl_actionlink('login');
-                }
-          ?></div>
-        </div>
-    </div>
-    <?php } ?>
+    <?php tpl_actionlink('login'); ?>
 
   <div class="top-menu">
     <ul>
@@ -92,10 +53,12 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
       <li><a href="/doku.php?id=audittemplates:home">Audit Tempates</a></li>
       <li><a href="/doku.php?id=projectmanagement:home">Project Management</a></li>
       <li><a href="/doku.php?id=firm-departmentmanagement:home">Firm/Department Mangement</a></li>
+      <li class="search-form"><?php tpl_searchform() ?></li>
     </ul>
   </div>
-   </div>
 
+
+</div>
 </div>
 
 <div id="wrapper" class="dokuwiki">

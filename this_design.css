@@ -82,11 +82,9 @@ text-shadow: rgba(255, 255, 255, 0.898438) 0px 1px 1px;
 #menubar {
 	display: block;
 	clear: both;
-	width: 980px;
+	width: 830px;
 	overflow: hidden;
-	margin: 1em auto;
-	padding: 0 0 10px;
-	border-bottom: 1px solid #eee;
+	margin: 0 auto;
 
 }
 
@@ -358,7 +356,7 @@ div.dokuwiki .sidebar-box ul li {
 }
 
 html { background:#fff; }
-body { font:12px/1.5 "Lucida Grande", Geneva, Arial, Verdana, sans-serif; color:#333; background:transparent; }
+body { font: 12px/14px 'Lucida Grande', Verdana, Lucida, Helvetica, Arial, sans-serif; color:#333; background:transparent; }
 
 /*vertical rhythm */
 h1, h2,h3, h4,h5 {
@@ -381,7 +379,7 @@ p {
 
 #wrapper {
 	margin: 2em auto;
-	width:980px; 
+	width:830px; 
 	overflow: hidden;
 }
 
@@ -405,16 +403,17 @@ p {
 
 .right-page {
 	float: left;
-	width: 735px;
+	width: 650px;
 }
 
 .right-page.start-page {
-	width: 980px;
+	width: 830px;
 }
 
 .left-sidebar {
 	float: left;
-	width: 240px;
+	width: 140px;
+	margin: 0 40px 0 0;
 }
 
 
@@ -704,9 +703,18 @@ div.dokuwiki div.toolbox_sidebar a.revert {
   background: transparent url(images/tool-revert.png) 12px center no-repeat;
 }
 
+.header {
+	width: 100%;
+	height: 77px;
+	margin: 0 0 10px;
+	background: #C3C3C3;
+	background: -moz-linear-gradient(top,#f0f0f0,#c3c3c3);
+	background: -webkit-gradient(linear, left top, left bottom, from(#F0F0F0), to(#C3C3C3));
+}
+
 #menubar {
-	overflow: visible;
-	height: 100px;
+	height: 77px;
+	position: relative;
 }
 
 div.dokuwiki .right-side {
@@ -718,25 +726,71 @@ div.dokuwiki .right-side .search-form {
 }
 
 div.dokuwiki .top-menu {
-	float: right;
+	float: left;
 	font-size: 1em;
-	margin: 10px 0 0;
+	margin: 50px 0 0;
 	clear: both;
+}
+
+div.dokuwiki .top-menu ul {
+	margin: 0;
 }
 
 div.dokuwiki .top-menu li {
 	float: left;
 	list-style: none;
-	margin: 0 0 0 15px;
+	margin: 0 15px 0 0;
+	position: relative;
+}
+
+div.dokuwiki .top-menu li.search-form {
+	margin: 0;
+}
+
+div.dokuwiki .top-menu li.search-form .search {
+	position: relative;
+	top: -6px;
+	left: 0;
+}
+
+div.dokuwiki .top-menu li.search-form #qsearch__in {
+	width: 121px !important;
+	background: #fff !important;
+	height: 16px;
+}
+
+div.dokuwiki .top-menu li.search-form .button {
+	background: #DDD !important;
+	background: -moz-linear-gradient(top,#fff,#ddd) !important;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ddd)) !important;
+	height: 25px !important;
 }
 
 div.dokuwiki .footer ul {
 	margin: 0;
 }
 
+.footer-wrap {
+	background: #eee;
+	background: -moz-linear-gradient(top,#eee,#fff);
+	background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#fff));
+	width: 100%;
+	overflow: hidden;
+}
+
 .footer {
-	border-top: 1px solid #eee;
 	padding: 10px 0 0;
+	width: 830px;
+	margin: 10px auto;
+}
+
+.footer a {
+	color: #08C;
+	text-decoration: none;
+}
+
+.footer a:hover, .footer a:focus {
+	text-decoration: underline;
 }
 
 .footer .info-block {
@@ -750,13 +804,14 @@ div.dokuwiki .footer ul {
 
 .footer .links-block {
 	float: left;
-	margin: 0 10px 0 60px;
+	margin: 0 10px 0 50px;
 }
 
 .footer .links-block h4 {
 	font-weight: bold;
 	text-transform: uppercase;
 	margin: 0 0 6px;
+	color: #666;
 }
 
 .footer .links-block ul li {
@@ -785,9 +840,24 @@ div.dokuwiki .action-buttons ul {
 	margin: 0;
 }
 
-div.dokuwiki .action-buttons a, div.dokuwiki .action-buttons a:hover, div.dokuwiki .action-buttons a:focus {
+div.dokuwiki .action-buttons a {
 	color: #333333;
 	text-decoration: none;
+	background: #ddd;
+	background: -moz-linear-gradient(top,#fff,#ddd);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ddd));
+	padding: 3px 6px;
+	box-shadow: #ccc 1px 1px 3px;
+	-moz-box-shadow: #ccc 1px 1px 3px;
+	-webkit-box-shadow: #ccc 1px 1px 3px;
+	border: 1px solid #999;
+	margin: 2px;
+}
+
+div.dokuwiki .action-buttons a:hover, div.dokuwiki .action-buttons a:focus {
+	background: #eee;
+	background: -moz-linear-gradient(top,#fff,#eee);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
 }
 
 .menu #wiki_navigate {
@@ -809,4 +879,19 @@ div.dokuwiki .action-buttons a, div.dokuwiki .action-buttons a:hover, div.dokuwi
 
 .menu #wiki_navigate a:hover, .menu #wiki_navigate a:focus {
 	text-decoration: underline !important;
+}
+
+.header a.login, .header a.logout {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #a5a5a5 !important;
+	padding: 0 6px !important;
+	color: #FFF !important;
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
 }
