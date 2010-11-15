@@ -42,7 +42,7 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
 
 <div class="header">
 <div id="menubar" class="dokuwiki">
-  <!-- <?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" accesskey="h" title="[ALT+H]" id="wikititle"')?> -->
+  <?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" accesskey="h" title="[ALT+H]" id="wikititle"')?>
 
     <?php tpl_actionlink('login'); ?>
 
