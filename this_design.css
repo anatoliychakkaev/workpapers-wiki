@@ -866,7 +866,15 @@ div.dokuwiki .action-buttons a:hover, div.dokuwiki .action-buttons a:focus {
 
 .menu #wiki_navigate {
 	font-size: 1.2em;
-	margin: 4px 0 0;
+	margin: 2px 0 0;
+}
+
+.menu #wiki_navigate ul {
+	margin: 0 0 10px;
+}
+
+.menu #wiki_navigate ul li {
+	line-height: 1.7em;
 }
 
 .menu #wiki_navigate ul ul {
