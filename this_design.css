@@ -261,10 +261,11 @@ text-shadow: rgba(255, 255, 255, 0.898438) 0px 1px 1px;
 
 
 div.dokuwiki #page > h1:first-child {
-	font-size: 3em;
+	font-size: 2.5em;
 	line-height: 1em;
 	margin-bottom: 0.75em;
 	margin-top: 0.5em;
+	font-weight: normal;
 }
 
 
@@ -865,8 +866,8 @@ div.dokuwiki .action-buttons a:hover, div.dokuwiki .action-buttons a:focus {
 }
 
 .menu #wiki_navigate {
-	font-size: 1.2em;
-	margin: 2px 0 0;
+	font-size: 1.3em;
+	margin: 4px 0 0;
 }
 
 .menu #wiki_navigate ul {
@@ -879,7 +880,7 @@ div.dokuwiki .action-buttons a:hover, div.dokuwiki .action-buttons a:focus {
 
 .menu #wiki_navigate ul ul {
 	background: none;
-	margin: 10px 0 0;
+	margin: 6px 0 0;
 }
 
 .menu #wiki_navigate a {
@@ -888,6 +889,7 @@ div.dokuwiki .action-buttons a:hover, div.dokuwiki .action-buttons a:focus {
 	color: #0088CC;
 	text-decoration: none;
 	border: 0;
+	font-size: 0.85em;
 }
 
 .menu #wiki_navigate a:hover, .menu #wiki_navigate a:focus {
