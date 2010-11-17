@@ -89,7 +89,6 @@ text-shadow: rgba(255, 255, 255, 0.898438) 0px 1px 1px;
 }
 
 #menubar #qsearch__in {
-	margin-left: 10px;
 	width: 210px;
   line-height: 1.6364em; /* 36px */
   height: 1.6364em; /* 36px */
@@ -743,7 +742,7 @@ div.dokuwiki .top-menu ul {
 div.dokuwiki .top-menu li {
 	float: left;
 	list-style: none;
-	margin: 0 15px 0 0;
+	margin: 0 13px 0 0;
 	position: relative;
 }
 
@@ -787,6 +786,7 @@ div.dokuwiki .footer ul {
 	padding: 10px 0 0;
 	width: 830px;
 	margin: 10px auto;
+	overflow: hidden;
 }
 
 .footer a {
@@ -809,7 +809,7 @@ div.dokuwiki .footer ul {
 
 .footer .links-block {
 	float: left;
-	margin: 0 10px 0 50px;
+	margin: 0 10px 0 40px;
 }
 
 .footer .links-block h4 {
@@ -910,3 +910,5 @@ div.dokuwiki .action-buttons a:hover, div.dokuwiki .action-buttons a:focus {
 	border-bottom-right-radius: 3px;
 	border-bottom-left-radius: 3px;
 }
+
+.no { display: none; }

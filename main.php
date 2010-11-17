@@ -165,5 +165,6 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
     <?php /*old includehook*/ @include(dirname(__FILE__).'/footer.html')?>
 
 <div class="no"><?php /* provide DokuWiki housekeeping, required in all templates */ tpl_indexerWebBug()?></div>
+
 </body>
 </html>
