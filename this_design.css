@@ -359,7 +359,7 @@ div.dokuwiki .sidebar-box ul li {
 }
 
 html { background:#fff; }
-body { font: 12px/14px 'Lucida Grande', Verdana, Lucida, Helvetica, Arial, sans-serif; color:#333; background:transparent; }
+body { font: 12px/19px 'Lucida Grande', Verdana, Lucida, Helvetica, Arial, sans-serif; color:#333; background:transparent; }
 
 /*vertical rhythm */
 h1, h2,h3, h4,h5 {
@@ -749,6 +749,9 @@ div.dokuwiki .top-menu li {
 div.dokuwiki .top-menu li.search-form {
 	margin: 0;
 	float: right;
+	bottom: 0;
+	right: 0;
+	position: absolute;
 }
 
 div.dokuwiki .top-menu li.search-form .search {
