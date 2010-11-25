@@ -49,10 +49,10 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
   <div class="top-menu">
     <ul>
       <li><a href="/">Home</a></li>
-      <li><?php tpl_pagelink('performauditprocedures:home', 'Perform Audit Procedures'); ?></li>
-      <li><?php tpl_pagelink('audittemplates:home', 'Audit Tempates'); ?></li>
-      <li><?php tpl_pagelink('projectmanagement:home', 'Project Management'); ?></li>
-      <li><?php tpl_pagelink('firm-departmentmanagement:home', 'Firm/Department Mangement'); ?></li>
+      <li><?php tpl_pagelink('performauditprocedures:home', 'Audit Procedures'); ?></li>      
+      <li><?php tpl_pagelink('projectmanagement:home', 'Audit Projects'); ?></li>
+      <li><?php tpl_pagelink('firm-departmentmanagement:home', 'Audit Groups'); ?></li>
+	  <li><?php tpl_pagelink('audittemplates:home', 'Audit Tempates'); ?></li>
       <li class="search-form"><?php tpl_searchform() ?></li>
     </ul>
   </div>
