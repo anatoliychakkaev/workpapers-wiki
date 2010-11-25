@@ -689,14 +689,11 @@ div.insitu-footnote {
 
 /* --------------- search result formating --------------- */
 div.dokuwiki .search_result {
-  margin-bottom: 6px;
-  padding: 0 10px 0 30px;
 }
 
 div.dokuwiki .search_snippet {
-  color: __text_other__;
+  color: __text__;
   font-size: 12px;
-  margin-left: 20px;
 }
 
 div.dokuwiki .search_sep {
@@ -705,10 +702,9 @@ div.dokuwiki .search_sep {
 
 div.dokuwiki .search_hit {
   color: __text__;
-  background-color: __highlight__;
 }
 div.dokuwiki strong.search_hit {
-  font-weight: normal;
+  font-weight: bold;
 }
 
 div.dokuwiki div.search_quickresult {

@@ -35,7 +35,12 @@ div.info,
 div.success,
 div.error,
 div.breadcrumbs,
-div.secedit {
+div.secedit,
+div#wiki_navigate,
+div#trail,
+div.action-buttons,
+div.footer-wrap,
+div.meta div.doc {
   display: none;
 }
 
@@ -82,7 +87,7 @@ h1, h2, h3, h4, h5 {
     padding-right:  0;
     padding-top:    0.5em;
     padding-bottom: 0;
-    border-bottom: 1px solid #000000;
+    border-bottom: 3px solid #000000;
     clear: left;
 }
 
